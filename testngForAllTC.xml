@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests" >
+   <listeners>
+       <listener class-name="common_listeners.MyTestResultListener" />
+   </listeners>
+   <test thread-count="5" name="Test1">
+       <parameter name="browser" value="chrome"></parameter>
+       <parameter name="url" value="https://demoqa.com/"></parameter>
+       <classes>
+           <class name="demoqaMain.DemoqaMainTC1"/>
+       </classes>
+   </test>
+   <!-- Test -->
+   <test thread-count="5" name="Test2">
+       <parameter name="browser" value="chrome"></parameter>
+       <parameter name="url" value="https://demoqa.com/"></parameter>
+       <classes>
+           <class name="demoqaMain.DemoqaMainTC2"/>
+       </classes>
+   </test>
+   <!-- Test -->
+   <test thread-count="5" name="Test3">
+       <parameter name="browser" value="chrome"></parameter>
+       <parameter name="url" value="https://demoqa.com/"></parameter>
+       <classes>
+           <class name="demoqaMain2812.DemoqaTC1"/>
+       </classes>
+   </test>
+   <!-- Test -->
+   <test thread-count="5" name="Test4">
+       <parameter name="browser" value="chrome"></parameter>
+       <parameter name="url" value="https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/datepicker-dialog"></parameter>
+       <classes>
+           <class name="demoqaMain2812.SampleTC2Execution"/>
+       </classes>
+   </test>
+   <!-- Test -->
+   <test thread-count="5" name="Test5">
+       <parameter name="browser" value="chrome"></parameter>
+       <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+       <classes>
+           <class name="orangehrm.OragneHrm"/>
+       </classes>
+   </test>
+   <!-- Test -->
+   <test thread-count="5" name="Test6">
+       <parameter name="browser" value="chrome"></parameter>
+       <parameter name="url" value="https://bitetoothpastebits.com/collections/all"></parameter>
+       <classes>
+           <class name="main_bitetooth.ProductOrderPlace"/>
+       </classes>
+   </test>
+   <!-- Test -->
+</suite>
+<!-- Suite -->
