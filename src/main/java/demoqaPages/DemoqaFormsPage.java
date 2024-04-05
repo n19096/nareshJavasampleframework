@@ -57,6 +57,7 @@ public class DemoqaFormsPage extends CommonMethods
 	@FindBy(xpath = "//select[@class='react-datepicker__month-select']") WebElement monthlist;
 	@FindBy(xpath = "//div[text()='Thanks for submitting the form']") WebElement finalText;
 	@FindBy(xpath = "//div[@class=' css-11unzgr']") List<WebElement> stateList;
+	@FindBy(id = "MYlastName") WebElement mylastname;
 	
 	/**
 	 *  sending keys to the field by  using custom method
